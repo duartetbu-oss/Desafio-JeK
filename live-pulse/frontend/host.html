@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Pulse - Anfitrião</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Live Pulse</h1>
+        <nav>
+            <a href="host.html">Anfitrião</a>
+            <a href="public.html">Público</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Criar votação</h2>
+
+            <form id = "create-poll-form">
+
+                    <label for="poll-question">Perguntar:</label>
+
+                    <input
+                        type="text"
+                        id="poll-question"
+                        name="question"
+                        placeholder="Escreve a pergunta..."
+                        required
+                    >
+                
+                <div id="options-container">
+                    <label>Opções:</label>
+
+                    <input
+                        type="text"
+                        name="options"
+                        placeholder="Opção 1"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        name="options"
+                        placeholder="Opção 2"
+                        required
+                    >
+                </div>
+
+                <button type="button" id="add-option">
+                    Adicionar opção
+                </button>
+
+                <button type="submit">
+                    Criar votação
+                </button>
+
+                <p id="form-message" role="status"></p>
+            </form>
+        </section>
+        <section>
+            <h2>Votações existentes</h2>
+
+            <button id="refresh-polls">
+                Atualizar votações
+            </button>
+
+            <div id="polls-container">
+                <p>A carregar votações...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/host.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Pulse - Público</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Live Pulse</h1>
+
+        <nav>
+            <a href="host.html">Anfitrião</a>
+            <a href="public.html">Público</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Votações disponíveis</h2>
+
+            <p>
+                Escolhe uma votação aberta para participar.
+                Podes consultar os resultados das votações fechadas.
+            </p>
+
+            <button type="button" id="refresh-polls">
+                Atualizar votações
+            </button>
+
+            <div id="polls-container">
+                <p>A carregar votações...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/public.js"></script>
+
+</body>
+</html>
